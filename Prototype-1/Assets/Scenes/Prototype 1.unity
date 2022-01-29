@@ -527,6 +527,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vehicleSpeed: 10
+  vehicleTurnSpeed: 10
+  horizontalInput: 0
+  forwardInput: 0
 --- !u!54 &555784127
 Rigidbody:
   m_ObjectHideFlags: 0

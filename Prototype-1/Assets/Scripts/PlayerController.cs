@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float vehicleSpeed = 10.0f;
     public float vehicleTurnSpeed;
     public float horizontalInput;
+    public float forwardInput;
 
     void Start()
     {
@@ -16,11 +17,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // horizontal input is set from Unity's Input Manager
+        // horizontal & forward/backward input is set from Unity's Input Manager
         horizontalInput = Input.GetAxis("Horizontal");
+        forwardInput = Input.GetAxis("Vertical");
 
-        // player vehicle forward movement
-        transform.Translate(Vector3.forward * Time.deltaTime * 20);
+        // player vehicle forward/backward movement
+        transform.Translate(Vector3.forward * Time.deltaTime * 20 * forwardInput);
 
         // player vehicle horizontal movement
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput);
