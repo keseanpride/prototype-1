@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // variables
-    public float vehicleSpeed = 10.0f;
-    public float vehicleTurnSpeed;
-    public float horizontalInput;
-    public float forwardInput;
+    private float vehicleSpeed = 15.0f;
+    private float vehicleTurnSpeed = 45.0f;
+    private float horizontalInput;
+    private float forwardInput;
 
     void Start()
     {
