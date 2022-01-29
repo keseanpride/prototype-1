@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // variables
+    public float vehicleSpeed = 10.0f;
+
     // Start is called before the first frame update
     void Start()
     {
