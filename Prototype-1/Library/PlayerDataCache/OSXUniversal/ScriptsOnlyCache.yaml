@@ -44,9 +44,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2128}
+      Script: {instanceID: 2420}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 4156}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -491,4 +491,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/Prototype 1.unity
-  playerPath: /Users/seanpride/Desktop/prototype-1/Prototype-1/Assets/Builds/Mac/RoadCrates.app
+  playerPath: /Users/seanpride/Desktop/prototype-1/Prototype-1/Builds/Mac/roadcrates.app

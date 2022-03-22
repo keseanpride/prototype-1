@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,5 +27,10 @@ public class PlayerController : MonoBehaviour
 
         // player vehicle horizontal rotational movement
         transform.Rotate(Vector3.up, Time.deltaTime * horizontalInput * vehicleTurnSpeed);
+
+        // reload scene from player input
+        if (Input.GetKeyDown("r")) {
+            SceneManager.LoadScene("Prototype 1");
+        }
     }
 }
